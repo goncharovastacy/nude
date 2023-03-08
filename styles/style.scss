@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$bgcolor: #FDF7F0;
+$textcolor: #3E3E42;
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin font1 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+
+@mixin font2 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 2.27;
+}
+
+header{
+    .advertising{
+        background-color: #374F4C;
+        img {
+            display: block;
+            margin: auto;
+            padding: 20px 0;
+        }
+    }
+
+}
+.container{
+    max-width: 1098px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.header-wrapper{
+    background-color: $bgcolor;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    img{
+        padding-top: 25px;
+    }
+    .menu {
+        padding-top: 37px;
+        ul{
+            display: flex;
+        }
+        li:not(:last-child){
+            margin-right: 60px;
+        }
+        a{
+            color: $textcolor;
+            @include font1;
+        }
+    }
+}
+
+.banner-wrapper{
+    background-color: $bgcolor;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    h1{
+        max-width: 337px;
+        padding-top: 70px;
+        font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 46px;
+line-height: 50px;
+color: $textcolor;
+    }
+    .banner__image{
+        padding-top: 37px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .banner__text_big{
+        margin-top: 27px;
+        @include font1;
+        max-width: 363px;
+        color: $textcolor;
+    }
+    .banner__text_small{
+        @include font2;
+        max-width: 350px;
+        color: $textcolor;
+    }
+    .banner__text_small p:first-child{
+        margin-top: 16px;
+    }
+    .banner__text_small p:last-child{
+        margin-top: 11px;
+    }
+    .banner__apps{
+        margin-top: 47px;
+    }
+    .banner__apps a:first-child{
+        margin-right: 8px;
+    }
+    .banner__partners{
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+        gap: 4px;
+    }
+}
