@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$bgcolor: #FDF7F0;
+$bgtextcolor: #374F4C;
+$bgcolorft: #F3DCC4;
+$textcolor: #3E3E42;
+$textcolor2: #EDE5DC;
+$bgcolor3: #CAD4BD;
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin font1 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+
+@mixin font2 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 2.27;
+}
+@mixin font3 {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 24px;
+}
+@mixin font4 {
+font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 59px;
+}
+@mixin button {
+        width: 125px;
+        height: 43px;
+        @include font2;
+        line-height: 1.4;
+        border: 1px solid #F8F9FA;
+        color: #3E3E42;
+}
+
+header{
+    .advertising{
+        background-color: $bgtextcolor;
+        img {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+            padding: 20px 0;
+        }
+    }
+
+}
+.container{
+    max-width: 1098px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.header-wrapper{
+    background-color: $bgcolor;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    img{
+        padding-top: 25px;
+    }
+    .menu {
+        padding-top: 37px;
+        ul{
+            display: flex;
+        }
+        li:not(:last-child){
+            margin-right: 60px;
+        }
+        a{
+            color: $textcolor;
+            @include font1;
+        }
+    }
+}
+
+
+.banner-wrapper{
+    background-color: $bgcolor;
+   
+}
+
+.strip{
+    background-color: $bgcolor;
+    img{
+        width: 100%;
+        margin-bottom: -7px;
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    h1{
+        max-width: 337px;
+        padding-top: 70px;
+        font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 46px;
+line-height: 50px;
+color: $textcolor;
+    }
+    .banner__image{
+        padding-top: 37px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .banner__text_big{
+        margin-top: 27px;
+        @include font1;
+        max-width: 363px;
+        color: $textcolor;
+    }
+    .banner__text_small{
+        @include font2;
+        max-width: 350px;
+        color: $textcolor;
+    }
+    .banner__text_small p:first-child{
+        margin-top: 16px;
+    }
+    .banner__text_small p:last-child{
+        margin-top: 11px;
+    }
+    .banner__apps{
+        margin-top: 47px;
+    }
+    
+    .banner__partners{
+        margin-top: 48px;
+        margin-bottom: 66px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+        gap: 4px;
+    }
+}
+.apps a:first-child{
+    margin-right: 8px;
+}
+
+.about-wrapper {
+    background-color: $bgtextcolor;
+    .container {
+        padding-top: 99px;
+    }
+    }
+
+    
+.advantages{
+    padding: 49px 52px 67px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bgcolor;
+    border-radius: 20px;
+    .advantages__card{
+        
+        display: flex;
+        .advantages__card__text{
+            max-width: 249px;
+        }
+        img{
+            max-width: 100%;
+            /*надо подумать почему без этого сплющиваются*/
+            max-height: 40px;
+            margin-right: 16px;
+        }
+        h4 {
+            @include font3;
+            color: $bgtextcolor;
+        }
+        p{
+            @include font2;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+    }
+}
+
+.about{
+    h2{
+        margin: auto;
+        margin-top: 82px;
+        max-width: 589px;
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 74px;
+        line-height: 1.01;
+        color: $textcolor2;
+    }
+    .about__text {
+        text-align: center;
+        margin-top: 26px;
+        @include font1;
+        color: $textcolor2;
+    }
+    .install{
+        padding-bottom: 81px;
+        .apps{
+            margin-top: 37px;
+            display: flex;
+            justify-content: center;
+        }
+        h4{
+            max-width: 434px;
+            text-align: center;
+            margin: auto;
+            margin-top: 102px;
+            @include font4;
+            color: $textcolor2;
+        }
+        p{
+            text-align: center;
+            margin-top: 26px;
+            @include font2;
+            color: $textcolor2;
+        }
+    }
+    
+}
+
+.services{
+    .service{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .service__text{
+            h3{
+                max-width: 340px;
+                font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+color: $textcolor2;
+        }
+            }
+            p{
+                margin-top: 27px;
+                max-width: 361px;
+                @include font1;
+        color: $textcolor2;
+            }
+            .service__image img{
+                max-width: 100%;
+            }
+        }
+    }
+    .strip_big {
+        background-color: $bgcolor;
+        img{
+            width: 100%
+        }
+    }
+
+    .accounts{
+        
+        background-color: $bgcolor;
+        .accounts__headline{
+            padding: 100px 0 83px;
+            p{
+                text-align: center;
+                @include font1;
+                color: $textcolor;
+            }
+            h4{
+                max-width: 470px;
+                margin: auto;
+                margin-top: 12px;
+                text-align: center;
+                @include font4;
+                color: $bgtextcolor;
+            }
+        }
+        .accounts__options-wrapper{
+            background-color: $bgcolor3;
+            
+        }
+    }
+
+    .accounts__options{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0 89px;
+        
+    
+}
+.options__option {
+    max-width: 300px;
+    h5{
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        color: $bgtextcolor;
+    }
+    p{
+        @include font2;
+    line-height: 1.4;
+    color: #3E3E42;
+    }
+    button{
+        @include button;
+        margin-top: 15px;
+    }
+    
+    
+}
+
+.strip_light{
+    background-color: $bgcolor;
+    img{
+        max-width: 100%;
+        margin-bottom: -6px;
+    }
+}
+
+.accounts__options__option{
+    button {
+        background-color: $bgcolor3;
+    }
+    button:hover{
+        background-color: #9db184;
+    }
+}
+
+.options__option p:first-of-type{
+    margin-top: 30px;
+}
+.options__option p:last-of-type{
+    margin-top: 20px;
+}
+
+.girls-banner{
+    background: url(../assets/images/girls.png) no-repeat center;
+    background-size: cover;
+    h2{
+        padding: 195px 0 273px;
+        text-align: center;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 102px;
+        line-height: 102px;
+        color: $textcolor2;
+    }
+}
+    footer{
+        background-color: $bgcolorft;
+        .line{
+            border-bottom: 1px solid $textcolor;
+        }
+        address p:first-child{
+            padding: 40px 0 20px;
+            @include font2;
+            font-size: 15px;
+            line-height: 1.4;
+            color: #3E3E42;
+        }
+        address p:last-child{
+            padding-bottom: 40px;
+            @include font2;
+            font-size: 11px;
+            color: #3E3E42;
+        }
+    }
+
+    .footer-wrapper{
+        padding: 60px 0 76px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__options__option{
+        button{
+            background-color: $bgcolorft;
+        }
+        button:hover {
+            background-color: #e7c7a4;
+        }
+    }
+
+    .footer__menu {
+        
+        h5{
+            font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+line-height: 34px;
+color: $textcolor;
+        }
+        a{
+            
+            @include font1;
+            color: $textcolor;
+        }
+        li{
+            max-width: 164px;
+        }
+        ul{
+            margin-top: 15px;
+        }
+        ul li:not(:first-child) {
+            margin-top: 8px;
+        }
+    }

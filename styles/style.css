@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+header .advertising {
+  background-color: #374F4C;
+}
+header .advertising img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1098px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.header-wrapper {
+  background-color: #FDF7F0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header img {
+  padding-top: 25px;
+}
+.header .menu {
+  padding-top: 37px;
+}
+.header .menu ul {
+  display: flex;
+}
+.header .menu li:not(:last-child) {
+  margin-right: 60px;
+}
+.header .menu a {
+  color: #3E3E42;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.banner-wrapper {
+  background-color: #FDF7F0;
+}
+
+.strip {
+  background-color: #FDF7F0;
+}
+.strip img {
+  width: 100%;
+  margin-bottom: -7px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner h1 {
+  max-width: 337px;
+  padding-top: 70px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 50px;
+  color: #3E3E42;
+}
+.banner .banner__image {
+  padding-top: 37px;
+}
+.banner .banner__image img {
+  max-width: 100%;
+}
+.banner .banner__text_big {
+  margin-top: 27px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 363px;
+  color: #3E3E42;
+}
+.banner .banner__text_small {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  max-width: 350px;
+  color: #3E3E42;
+}
+.banner .banner__text_small p:first-child {
+  margin-top: 16px;
+}
+.banner .banner__text_small p:last-child {
+  margin-top: 11px;
+}
+.banner .banner__apps {
+  margin-top: 47px;
+}
+.banner .banner__partners {
+  margin-top: 48px;
+  margin-bottom: 66px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+  gap: 4px;
+}
+
+.apps a:first-child {
+  margin-right: 8px;
+}
+
+.about-wrapper {
+  background-color: #374F4C;
+}
+.about-wrapper .container {
+  padding-top: 99px;
+}
+
+.advantages {
+  padding: 49px 52px 67px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FDF7F0;
+  border-radius: 20px;
+}
+.advantages .advantages__card {
+  display: flex;
+}
+.advantages .advantages__card .advantages__card__text {
+  max-width: 249px;
+}
+.advantages .advantages__card img {
+  max-width: 100%;
+  /*надо подумать почему без этого сплющиваются*/
+  max-height: 40px;
+  margin-right: 16px;
+}
+.advantages .advantages__card h4 {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #374F4C;
+}
+.advantages .advantages__card p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.about h2 {
+  margin: auto;
+  margin-top: 82px;
+  max-width: 589px;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 74px;
+  line-height: 1.01;
+  color: #EDE5DC;
+}
+.about .about__text {
+  text-align: center;
+  margin-top: 26px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #EDE5DC;
+}
+.about .install {
+  padding-bottom: 81px;
+}
+.about .install .apps {
+  margin-top: 37px;
+  display: flex;
+  justify-content: center;
+}
+.about .install h4 {
+  max-width: 434px;
+  text-align: center;
+  margin: auto;
+  margin-top: 102px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: #EDE5DC;
+}
+.about .install p {
+  text-align: center;
+  margin-top: 26px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  color: #EDE5DC;
+}
+
+.services .service {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.services .service .service__text h3 {
+  max-width: 340px;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #EDE5DC;
+}
+.services .service p {
+  margin-top: 27px;
+  max-width: 361px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #EDE5DC;
+}
+.services .service .service__image img {
+  max-width: 100%;
+}
+
+.strip_big {
+  background-color: #FDF7F0;
+}
+.strip_big img {
+  width: 100%;
+}
+
+.accounts {
+  background-color: #FDF7F0;
+}
+.accounts .accounts__headline {
+  padding: 100px 0 83px;
+}
+.accounts .accounts__headline p {
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3E3E42;
+}
+.accounts .accounts__headline h4 {
+  max-width: 470px;
+  margin: auto;
+  margin-top: 12px;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: #374F4C;
+}
+.accounts .accounts__options-wrapper {
+  background-color: #CAD4BD;
+}
+
+.accounts__options {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 89px;
+}
+
+.options__option {
+  max-width: 300px;
+}
+.options__option h5 {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #374F4C;
+}
+.options__option p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  line-height: 1.4;
+  color: #3E3E42;
+}
+.options__option button {
+  width: 125px;
+  height: 43px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  line-height: 1.4;
+  border: 1px solid #F8F9FA;
+  color: #3E3E42;
+  margin-top: 15px;
+}
+
+.strip_light {
+  background-color: #FDF7F0;
+}
+.strip_light img {
+  max-width: 100%;
+  margin-bottom: -6px;
+}
+
+.accounts__options__option button {
+  background-color: #CAD4BD;
+}
+.accounts__options__option button:hover {
+  background-color: #9db184;
+}
+
+.options__option p:first-of-type {
+  margin-top: 30px;
+}
+
+.options__option p:last-of-type {
+  margin-top: 20px;
+}
+
+.girls-banner {
+  background: url(../assets/images/girls.png) no-repeat center;
+  background-size: cover;
+}
+.girls-banner h2 {
+  padding: 195px 0 273px;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 102px;
+  line-height: 102px;
+  color: #EDE5DC;
+}
+
+footer {
+  background-color: #F3DCC4;
+}
+footer .line {
+  border-bottom: 1px solid #3E3E42;
+}
+footer address p:first-child {
+  padding: 40px 0 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #3E3E42;
+}
+footer address p:last-child {
+  padding-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.27;
+  font-size: 11px;
+  color: #3E3E42;
+}
+
+.footer-wrapper {
+  padding: 60px 0 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__options__option button {
+  background-color: #F3DCC4;
+}
+.footer__options__option button:hover {
+  background-color: #e7c7a4;
+}
+
+.footer__menu h5 {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #3E3E42;
+}
+.footer__menu a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3E3E42;
+}
+.footer__menu li {
+  max-width: 164px;
+}
+.footer__menu ul {
+  margin-top: 15px;
+}
+.footer__menu ul li:not(:first-child) {
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
