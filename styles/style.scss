@@ -50,7 +50,7 @@ line-height: 59px;
 }
 
 header{
-    .advertising{
+    .advertising {
         background-color: $bgtextcolor;
         img {
             max-width: 100%;
@@ -59,8 +59,8 @@ header{
             padding: 20px 0;
         }
     }
-
 }
+
 .container{
     max-width: 1098px;
     margin: auto;
@@ -74,10 +74,10 @@ header{
 .header{
     display: flex;
     justify-content: space-between;
-    img{
+    .logo {
         padding-top: 25px;
     }
-    .menu {
+    nav {
         padding-top: 37px;
         ul{
             display: flex;
@@ -92,6 +92,11 @@ header{
     }
 }
 
+@media screen and (max-width: 767px){
+    .advertising {
+        display: none;
+    }
+}
 
 .banner-wrapper{
     background-color: $bgcolor;
@@ -178,10 +183,7 @@ color: $textcolor;
         .advantages__card__text{
             max-width: 249px;
         }
-        img{
-            max-width: 100%;
-            /*надо подумать почему без этого сплющиваются*/
-            max-height: 40px;
+        .advantages__card__image {
             margin-right: 16px;
         }
         h4 {
