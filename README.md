@@ -7,9 +7,9 @@ The website is adapted only for desktop.</p>
 
 https://goncharovastacy.github.io/nude/
 
-<img src="./assets/images/readme/screen.png" alt="screen" width="75%">
-<img src="./assets/images/readme/screen2.png" alt="screen2" width="75%">
-<img src="./assets/images/readme/screen3.png" alt="screen3" width="75%">
+<img src="./assets/images/readme/screen.png" alt="screen" width="80%">
+<img src="./assets/images/readme/screen2.png" alt="screen2" width="80%">
+<img src="./assets/images/readme/screen3.png" alt="screen3" width="80%">
 
 ## Technologies:
 
